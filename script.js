@@ -3,7 +3,7 @@ const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('mins');
 const secondsEl = document.getElementById('seconds');
 
-const festival = "28 Mar 2021";
+const festival = "01 Jan 2022";
 
 function countdown() {
     const festDate = new Date(festival);
@@ -22,7 +22,7 @@ function countdown() {
     secondsEl.innerHTML = formatTime(seconds);
 
     console.log(days, hours, mins, seconds);
-}
+} 
 
 function formatTime(time) {
     return time < 10 ? (`0${time}`) : time;
